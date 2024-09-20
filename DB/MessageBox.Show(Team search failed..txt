@@ -1,0 +1,22 @@
+MessageBox.Show("Team search failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+PointstextBox.Focus();
+return;
+
+MessageBox.Show("Data has been saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+Reset();
+
+else
+                {
+                    MessageBox.Show("Data save failed", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                }
+
+
+
+catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+MessageBox.Show("Data has been modified.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();

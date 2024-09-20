@@ -1,0 +1,3 @@
+on main form after show all, would like to be able to double click on a team and a team roster pops up
+
+or form to query that team player's personal stats

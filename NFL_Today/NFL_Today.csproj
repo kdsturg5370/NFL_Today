@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IronPython" Version="3.4.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="UI\Betting_Odds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\PlayerFantasyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Offense_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Depth_Charts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\DL_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\SeasonStandings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RB_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Kicker_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\TE_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\WR_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Team_Stats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Targets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

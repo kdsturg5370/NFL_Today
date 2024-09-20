@@ -1,0 +1,54 @@
+Points
+FPoints
+Plays
+Yds
+Int
+Pass Yds
+Pass Att
+Pass Comp
+Pass TD
+Rush Yds
+Rush Att
+Rush TD
+TD
+RZ Att
+RZ TD
+RZ TD1
+RZ TD2
+RZ TD3
+RZ TD4
+TO
+Sacks Allowed
+
+Kansas City 
+Philadelphia
+Dallas
+Buffalo
+Detroit
+San Francisco
+Minnesota
+Cincinnati
+Seattle
+Jacksonville
+Miami
+Las Vegas
+LA Rams
+LA Chargers
+Green Bay
+NY Giants
+NY Jets
+Atlanta
+New England
+Cleveland
+Baltimore
+Carolina
+Arizona
+New Orleans
+Chicago
+Washington
+Tampa Bay
+Pittsburgh
+Tennessee
+Houston
+Indianapolis
+Denver

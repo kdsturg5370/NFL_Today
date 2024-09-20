@@ -1,0 +1,55 @@
+txtDPlayerDet.Clear();
+            txtDTeamDet.Clear();
+            txtDPosDet.Clear();
+            txtPPRPointsDet.Clear();
+            txtPPRPtsPGDet.Clear();
+            txtSnapsPGDet.Clear();
+            txtGPDet.Clear();
+            txtRZSnapsPGDet.Clear();
+            txtPctTeamRZSnapsDet.Clear();
+            txtPctTeamSnapsDet.Clear();
+            txtPctTeam1SnapsDet.Clear();
+            txtPctTeam2SnapsDet.Clear();
+            txtPctTeam3SnapsDet.Clear();
+            txtFPOEDet.Clear();
+            txtFPOEPGDet.Clear();
+            txtExpPassFptsDet.Clear();
+            txtExpPassFptsPGDet.Clear();
+            txtExpRushFptsDet.Clear();
+            txtExpRushFptsPGDet.Clear();
+            txtExpFptsDet.Clear();
+            txtExpFptsPGDet.Clear();
+            txtExpRecFptsDet.Clear();
+            txtExpRecFptsPGDet.Clear();
+
+
+CREATE TABLE "Player_Fantasy_Stats" (
+	"Id"	INTEGER NOT NULL,
+	"Full_Name"	TEXT,
+	"Team"	TEXT,
+	"Position"	TEXT,
+	"Games"	INTEGER,
+	"Snaps_PG"	REAL,
+	"Pct_Team_Snaps"	REAL,
+	"Pct_Team_First_Snaps"	REAL,
+	"Pct_Team_Second_Snaps"	NUMERIC,
+	"Pct_Team_Third_Snaps"	REAL,
+	"RZ_Snaps_PG"	REAL,
+	"Pct_Team_RZ_Snaps"	REAL,
+	"Ppr_Points"	REAL,
+	"Ppr_Points_PG"	REAL,
+	"Exp_Fpts"	REAL,
+	"Exp_Fpts_PG"	REAL,
+	"Fpoe"	REAL,
+	"Fpoe_PG"	REAL,
+	"Exp_Pass_Fpts"	INTEGER,
+	"Exp_Pass_Fpts_PG"	INTEGER,
+	"Exp_Rush_Fpts"	REAL,
+	"Exp_Rush_Fpts_PG"	REAL,
+	"Exp_Rec_Fpts"	INTEGER,
+	"Exp_Rec_Fpts_PG"	INTEGER,
+	PRIMARY KEY("Id" AUTOINCREMENT)
+)
+
+
+"Exp_Pass_Fpts_PG=@ExpPassFptsPG " @ExpPassFptsPG",
