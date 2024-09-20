@@ -124,7 +124,7 @@ namespace Eagles_Roster
             try
             {
 
-                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 conn.Open();
 
                 string query = "Select Id,Rank,Team,Player,Position,GamesPlayed,SoloTackles,AssistedTackles,TotalTackles,Sacks,SackYards,TacklesforLoss,PassesDefended,Interceptions,InterceptionReturnYards,LongInterception,ReturnTouchdowns,ForcedFumbles,FumblesRecovered,FumbleTouchdown From Def_Stats";
@@ -153,7 +153,7 @@ namespace Eagles_Roster
             {
                 try
                 {
-                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db"))
+                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db"))
                     {
                         conn.Open();
                         //string qry = "SELECT COUNT(Player) FROM Def_Stats WHERE Player LIKE '%" + txtPlayer.Text + "%'";
@@ -204,7 +204,7 @@ namespace Eagles_Roster
                 try
                 {
 
-                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                     conn.Open();
 
                     string query = "SELECT * FROM Def_Stats WHERE Team LIKE '%" + txtFindTeam.Text + "%'";
@@ -265,7 +265,7 @@ namespace Eagles_Roster
                 {
                     if (MessageBox.Show("Do you want to add this player?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                         conn.Open();
                     
                         SQLiteCommand sqlCommand = new SQLiteCommand("INSERT INTO Def_Stats(Rank,Team,Player,Position,GamesPlayed,SoloTackles,AssistedTackles,TotalTackles,Sacks,SackYards,TacklesforLoss,PassesDefended,Interceptions,InterceptionReturnYards,LongInterception,ReturnTouchdowns,ForcedFumbles,FumblesRecovered,FumbleTouchdown)Values(@Rank,@Team,@Player,@Position,@GamesPlayed,@SoloTackles,@AssistedTackles,@TotalTackles,@Sacks,@SackYards,@TacklesforLoss,@PassesDefended,@Interceptions,@InterceptionReturnYards,@LongInterception,@ReturnTouchdowns,@ForcedFumbles,@FumblesRecovered,@FumbleTouchdown)", conn);
@@ -314,7 +314,7 @@ namespace Eagles_Roster
             if (IsDPlayerNameValid())
 
             {
-                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 //conn.Open();
                 {
                     string sql = "SELECT Player,Rank,GamesPlayed,AssistedTackles,Sacks,TacklesforLoss,Interceptions,LongInterception,ForcedFumbles," +
@@ -391,7 +391,7 @@ namespace Eagles_Roster
                         
                     //conn.Open();
                     {
-                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                         SQLiteCommand sqlCommand = new SQLiteCommand("UPDATE Def_Stats SET Rank=@Rank," +
                             "Team=@Team," +
                             "Player=@Player," +

@@ -42,7 +42,7 @@ namespace NFL_Today.UI
             {
                 try
                 {
-                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db"))
+                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db"))
                     {
                         conn.Open();
                         //string qry = "SELECT COUNT(Player) FROM Def_Stats WHERE Player LIKE '%" + txtPlayer.Text + "%'";
@@ -91,7 +91,7 @@ namespace NFL_Today.UI
             try
             {
 
-                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 conn.Open();
 
                 string query = "Select * From KickingTeam_Stats";

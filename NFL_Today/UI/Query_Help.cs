@@ -30,6 +30,9 @@ namespace NFL_Today.UI
             HelpTextBox.Text += Environment.NewLine + "Select the desired drop down from each combo box selection in the Category Selections";
             HelpTextBox.Text += Environment.NewLine + "and Team/Rank/Player Lookup groups to find category members for your manual queries.";
             HelpTextBox.Text += Environment.NewLine + "";
+            HelpTextBox.Text += Environment.NewLine + "You can save your custom queries to the database to avoid having to rewrite them.";
+            HelpTextBox.Text += Environment.NewLine + "Query using SELECT * FROM Query_Archive table found in the Tables Names drop down list to retrieve your query.";
+            HelpTextBox.Text += Environment.NewLine + "";
             HelpTextBox.Text += Environment.NewLine + "When querying the different tables for specific statistics, use the following syntax:";
             HelpTextBox.Text += Environment.NewLine + "";
             HelpTextBox.Text += Environment.NewLine + "SELECT <categoryname, categoryname> FROM <table name>";

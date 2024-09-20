@@ -20,7 +20,7 @@ namespace NFL_Today.UI
 
         private void RankLookup_Load(object sender, EventArgs e)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+            SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
             string sql = "select * from Teams";
             SQLiteCommand cmd = new SQLiteCommand(sql, conn);
             conn.Open();
@@ -39,7 +39,7 @@ namespace NFL_Today.UI
 
         private void cbTeam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+            SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
             string sql = "select ID, Name, Season, PTS FROM Teams WHERE Name = '" + cbTeam.Text + "'";
             SQLiteCommand cmd = new SQLiteCommand(sql, conn);
             conn.Open();

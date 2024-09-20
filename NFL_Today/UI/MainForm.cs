@@ -9,12 +9,25 @@ namespace NFL_Today
 {
     public partial class MainForm : Form //this allows for the use of a main form Gateway and Manager classes to break up the code efficiently
     {
-        
+
         public MainForm()
         {
             InitializeComponent();
         }
 
+        private bool IsQueryValid()
+        {
+            if (txtRankNumber.Text == "")
+            {
+                MessageBox.Show("Please enter a query before saving.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtRankNumber.Focus();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         private bool IsTeamNameValid()
         {
             if (txtTeamSearch.Text == "")
@@ -28,7 +41,7 @@ namespace NFL_Today
                 return true;
             }
         }
-        TeamManager _TeamManager=new TeamManager(); //each new module has to be declared. This pulls from the TeamManager class 
+        TeamManager _TeamManager = new TeamManager(); //each new module has to be declared. This pulls from the TeamManager class 
 
         private void ClearForm()
         {
@@ -85,20 +98,14 @@ namespace NFL_Today
         {
             try
             {
-                
-                if(string.IsNullOrEmpty(Nametextbox.Text))
+
+                if (string.IsNullOrEmpty(Nametextbox.Text))
                 {
                     MessageBox.Show("Please enter a team name.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Nametextbox.Focus();
-                    return; 
+                    return;
                 }
-                //if (string.IsNullOrEmpty(PointstextBox.Text))
-                //{
-                //    MessageBox.Show("Please enter a number.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    PointstextBox.Focus();
-                //    return;
-                //}
-               
+
                 Teams Team = new Teams();
                 Team.Name = Nametextbox.Text;
                 if (PointstextBox != null && !string.IsNullOrWhiteSpace(PointstextBox.Text)) Team.PTS = Convert.ToInt32(PointstextBox.Text);
@@ -122,7 +129,7 @@ namespace NFL_Today
                 if (RZ4DtextBox != null && !string.IsNullOrWhiteSpace(RZ4DtextBox.Text)) Team.RZ_4D = Convert.ToInt32(RZ4DtextBox.Text);
                 if (TOtextBox != null && !string.IsNullOrWhiteSpace(TOtextBox.Text)) Team.TO = Convert.ToInt32(TOtextBox.Text);
                 if (SCKSAllowtextBox != null && !string.IsNullOrWhiteSpace(SCKSAllowtextBox.Text)) Team.SCKS_Allow = Convert.ToInt32(SCKSAllowtextBox.Text);
-               
+
                 if (_TeamManager.Add(Team))
                 {
                     MessageBox.Show("Data has been saved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,7 +148,7 @@ namespace NFL_Today
 
         private void Reset()
         {
-            Nametextbox.Text= string.Empty; 
+            Nametextbox.Text = string.Empty;
             PointstextBox.Clear();
             FPTStextBox.Clear();
             PlaystextBox.Clear();
@@ -178,7 +185,7 @@ namespace NFL_Today
                 DataGridViewRow dr = TeamDataGridView.SelectedRows[0];
 
                 frmTeamDetail frm = new frmTeamDetail(this);
- 
+
                 frm.IdLabel.Text = dr.Cells[0].Value.ToString();
                 frm.Nametextbox.Text = dr.Cells[1].Value.ToString();
                 frm.txtSeason.Text = dr.Cells[2].Value.ToString();
@@ -248,7 +255,7 @@ namespace NFL_Today
                 try
                 {
 
-                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                     conn.Open();
 
                     string query = "SELECT * FROM Teams WHERE Name LIKE '%" + txtTeamSearch.Text + "%'";
@@ -264,7 +271,7 @@ namespace NFL_Today
                     lblTotal.Text = (TeamDataGridView.RowCount).ToString();
                     label24.Text = String.Format("Total Number of Teams:", label24.Text);
                     conn.Close();
-                    
+
                 }
                 catch (Exception)
                 {
@@ -278,7 +285,7 @@ namespace NFL_Today
             try
             {
 
-                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 conn.Open();
 
                 string query = "Select * From Teams";
@@ -306,13 +313,13 @@ namespace NFL_Today
         private void fantasyPlayersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PlayerFantasyStats frm = new PlayerFantasyStats();
-            frm.Show(); 
+            frm.Show();
         }
 
         private void qBStatsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             QB_Stats frm = new QB_Stats();
-            frm.Show(); 
+            frm.Show();
         }
 
         private void qBStatsToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -336,13 +343,13 @@ namespace NFL_Today
         private void teamRosterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NFL_Roster_49ers frm = new NFL_Roster_49ers();
-            frm.Show(); 
+            frm.Show();
         }
 
         private void snapCountsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SnapCounts frm = new SnapCounts();    
-            frm.Show(); 
+            SnapCounts frm = new SnapCounts();
+            frm.Show();
         }
 
         private void bettingOddsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -365,7 +372,7 @@ namespace NFL_Today
 
         private void offenseStatsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OffenseStats frm = new OffenseStats();  
+            OffenseStats frm = new OffenseStats();
             frm.Show();
         }
 
@@ -383,8 +390,8 @@ namespace NFL_Today
 
         private void statsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Team_Stats frm= new Team_Stats();
-            frm.Show(); 
+            Team_Stats frm = new Team_Stats();
+            frm.Show();
         }
 
         private void seasonStandingsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -425,7 +432,7 @@ namespace NFL_Today
 
         private void analyticsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Analytics frm= new Analytics();
+            Analytics frm = new Analytics();
             frm.Show();
         }
 
@@ -543,7 +550,7 @@ namespace NFL_Today
             try
             {
 
-                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 SQLiteDataAdapter adapter;
                 DataSet ds;
 
@@ -561,17 +568,17 @@ namespace NFL_Today
                     return;
                 }
 
-                
+
                 conn.Close();
 
                 if (ds.Tables[0].Rows.Count != 0)
                 {
                     TeamDataGridView.DataSource = ds.Tables[0];
                     lblTotal.Text = (TeamDataGridView.RowCount).ToString();
-                    label24.Text = String.Format("Total Number of Players:", label24.Text);
+                    label24.Text = String.Format("Total Number of Results:", label24.Text);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("An error occured." + ex.ToString(), "Error!");
             }
@@ -590,6 +597,42 @@ namespace NFL_Today
             UpdateStats frm = new UpdateStats();
             frm.Show();
         }
+
+        private void btnSaveQuery_Click(object sender, EventArgs e)
+        {
+            if (IsQueryValid())
+            {
+                try
+                {
+                    if (MessageBox.Show("Do you want to save this query?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
+                        conn.Open();
+
+                        SQLiteCommand sqlCommand = new SQLiteCommand("INSERT INTO 'Query_Archive'(Query_Text)Values(@QText)", conn);
+                        sqlCommand.Parameters.AddWithValue("@QText", txtRankNumber.Text);
+                    
+
+                        sqlCommand.ExecuteNonQuery();
+                        ClearForm();
+                        txtRankNumber.Focus();
+                        conn.Close();
+
+                        MessageBox.Show("New query has been added successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Query has not been added.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+       
     }
 }
 

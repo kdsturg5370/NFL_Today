@@ -114,6 +114,7 @@
             lblTotal = new Label();
             label24 = new Label();
             groupBox3 = new GroupBox();
+            btnSaveQuery = new Button();
             label45 = new Label();
             btnInstruction = new Button();
             comboBox6 = new ComboBox();
@@ -175,7 +176,7 @@
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(87, 47);
             Savebutton.TabIndex = 1;
-            Savebutton.Text = "Save";
+            Savebutton.Text = "Save\\Update";
             Savebutton.UseVisualStyleBackColor = true;
             Savebutton.Click += Savebutton_Click;
             // 
@@ -208,6 +209,7 @@
             TeamDataGridView.AllowUserToAddRows = false;
             TeamDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             TeamDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TeamDataGridView.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             TeamDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TeamDataGridView.ContextMenuStrip = contextMenuStrip1;
             TeamDataGridView.Location = new Point(545, 491);
@@ -217,7 +219,7 @@
             TeamDataGridView.RowHeadersWidth = 102;
             TeamDataGridView.RowTemplate.Height = 25;
             TeamDataGridView.RowTemplate.Resizable = DataGridViewTriState.True;
-            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect;
             TeamDataGridView.Size = new Size(781, 163);
             TeamDataGridView.TabIndex = 3;
             TeamDataGridView.RowHeaderMouseDoubleClick += TeamDataGridView_RowHeaderMouseDoubleClick;
@@ -274,7 +276,7 @@
             groupBox1.Size = new Size(478, 620);
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
-            groupBox1.Text = "New Team Entry";
+            groupBox1.Text = "Add New or Update Team Stats";
             // 
             // RushYdstextBox
             // 
@@ -694,9 +696,9 @@
             // 
             // btnShowTeams
             // 
-            btnShowTeams.Location = new Point(740, 687);
+            btnShowTeams.Location = new Point(757, 687);
             btnShowTeams.Name = "btnShowTeams";
-            btnShowTeams.Size = new Size(107, 47);
+            btnShowTeams.Size = new Size(90, 47);
             btnShowTeams.TabIndex = 6;
             btnShowTeams.Text = "Show All";
             btnShowTeams.UseVisualStyleBackColor = true;
@@ -885,13 +887,14 @@
             label24.AutoSize = true;
             label24.Location = new Point(545, 669);
             label24.Name = "label24";
-            label24.Size = new Size(129, 15);
+            label24.Size = new Size(133, 15);
             label24.TabIndex = 11;
-            label24.Text = "Total Number of Teams";
+            label24.Text = "Total Number of Results";
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.LightGray;
+            groupBox3.Controls.Add(btnSaveQuery);
             groupBox3.Controls.Add(label45);
             groupBox3.Controls.Add(btnInstruction);
             groupBox3.Controls.Add(comboBox6);
@@ -920,10 +923,21 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Team/Rank/Player Lookup";
             // 
+            // btnSaveQuery
+            // 
+            btnSaveQuery.Location = new Point(199, 356);
+            btnSaveQuery.Name = "btnSaveQuery";
+            btnSaveQuery.Size = new Size(75, 58);
+            btnSaveQuery.TabIndex = 31;
+            btnSaveQuery.Text = "Save Query";
+            btnSaveQuery.UseMnemonic = false;
+            btnSaveQuery.UseVisualStyleBackColor = true;
+            btnSaveQuery.Click += btnSaveQuery_Click;
+            // 
             // label45
             // 
             label45.AutoSize = true;
-            label45.Location = new Point(25, 212);
+            label45.Location = new Point(25, 200);
             label45.Name = "label45";
             label45.Size = new Size(346, 45);
             label45.TabIndex = 30;
@@ -931,9 +945,9 @@
             // 
             // btnInstruction
             // 
-            btnInstruction.Location = new Point(295, 372);
+            btnInstruction.Location = new Point(295, 356);
             btnInstruction.Name = "btnInstruction";
-            btnInstruction.Size = new Size(82, 42);
+            btnInstruction.Size = new Size(82, 58);
             btnInstruction.TabIndex = 29;
             btnInstruction.Text = "Query Help";
             btnInstruction.UseVisualStyleBackColor = true;
@@ -1033,7 +1047,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "SEA", "NYJ", "SF", "LAC", "IND", "CIN", "MIN", "CAR", "JAX", "DET", "NE", "PHI", "BUF", "GB", "CHI", "LAR", "LV", "DAL", "NYG", "NO", "MIA", "PIT", "WAS", "KC", "TEN", "HOU", "CLE", "AZ", "TB", "ATL", "DEN", "BAL" });
-            comboBox1.Location = new Point(287, 30);
+            comboBox1.Location = new Point(301, 30);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(90, 23);
             comboBox1.TabIndex = 18;
@@ -1049,18 +1063,18 @@
             // 
             // btnLookup
             // 
-            btnLookup.Location = new Point(86, 372);
+            btnLookup.Location = new Point(86, 356);
             btnLookup.Name = "btnLookup";
-            btnLookup.Size = new Size(88, 42);
+            btnLookup.Size = new Size(88, 58);
             btnLookup.TabIndex = 16;
-            btnLookup.Text = "Lookup Stat";
+            btnLookup.Text = "Lookup Stat\\Saved Query";
             btnLookup.UseVisualStyleBackColor = true;
             btnLookup.Click += btnLookup_Click;
             // 
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(6, 303);
+            label27.Location = new Point(6, 289);
             label27.Name = "label27";
             label27.Size = new Size(69, 15);
             label27.TabIndex = 15;
@@ -1068,7 +1082,7 @@
             // 
             // txtRankNumber
             // 
-            txtRankNumber.Location = new Point(86, 277);
+            txtRankNumber.Location = new Point(86, 263);
             txtRankNumber.Multiline = true;
             txtRankNumber.Name = "txtRankNumber";
             txtRankNumber.Size = new Size(291, 73);
@@ -1265,7 +1279,7 @@
             // comboBox17
             // 
             comboBox17.FormattingEnabled = true;
-            comboBox17.Items.AddRange(new object[] { "Def_Stats ", "KickingTeam_Stats", "Player_Fantasy_Stats", "QB_Stats", "RB_Stats", "Snap_Counts", "TE_Stats", "Targets", "Team_Roster", "Teams", "WR_Stats" });
+            comboBox17.Items.AddRange(new object[] { "Def_Stats ", "KickingTeam_Stats", "Player_Fantasy_Stats", "QB_Stats", "RB_Stats", "Snap_Counts", "TE_Stats", "Targets", "Team_Roster", "Teams", "WR_Stats", "Query_Archive" });
             comboBox17.Location = new Point(260, 26);
             comboBox17.Name = "comboBox17";
             comboBox17.Size = new Size(96, 23);
@@ -1525,5 +1539,6 @@
         private ToolStripMenuItem glossaryToolStripMenuItem;
         private Button btnClear;
         private Label label45;
+        private Button btnSaveQuery;
     }
 }

@@ -9,7 +9,7 @@ namespace NFL_Today
 
         public database()
         {
-            myConnection = new SQLiteConnection("Data Source=C:\\Lions 11U 2024 Season\\NFL_Today\\DB\\NFLDB.db");//for an existing db
+            myConnection = new SQLiteConnection("Data Source=C:\\Users\\kdstu\\source\\repos\\NFL_Today\\DB\\NFLDB.db");//for an existing db
                                                                                                                               //if (!File.Exists("./RecordArtist.sqlite3"))
                                                                                                                               //{
 

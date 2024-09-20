@@ -109,7 +109,7 @@ namespace Eagles_Roster
                 {
                     if (MessageBox.Show("Do you want to add this player?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                        SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                         conn.Open();
 
                         SQLiteCommand sqlCommand = new SQLiteCommand("INSERT INTO 'Team_Roster'(Team,Season,Name,Pos,No,Rating,Ranking,Height,Weight,Age,Birthday,Exp,Drafted,DraftRound,DraftPick,College)Values(@Team,@Season,@Player,@Position,@Number,@Rating,@Rank,@Height,@Weight,@Age,@DOB,@YrsInNFL,@Drafted,@DraftRd,@DraftPick,@College)", conn);
@@ -170,7 +170,7 @@ namespace Eagles_Roster
             
                 try
                 {
-                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+                    SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                     conn.Open();
 
                     string query = "Select Id,Team,Season,Name,Pos,No,Rating,Ranking,Height,Weight,Age,Birthday,Exp,Drafted,DraftRound,DraftPick,College From 'Team_Roster'";
@@ -206,7 +206,7 @@ namespace Eagles_Roster
             {
                 try
                 {
-                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db"))
+                    using (SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db"))
                     {
                         conn.Open();
                         //string qry = "SELECT COUNT(Player) FROM Def_Stats WHERE Player LIKE '%" + txtPlayer.Text + "%'";

@@ -12,7 +12,7 @@ namespace NFL_Today.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=C:\Users\kdsturg5370\source\repos\NFL_Today\DB\NFLDB.db");
+            optionsBuilder.UseSqlite(@"Data Source=C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
         }
         public DbSet<Teams> Teams { get; set; }
 
