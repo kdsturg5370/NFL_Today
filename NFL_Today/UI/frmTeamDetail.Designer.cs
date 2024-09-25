@@ -28,530 +28,557 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.updateButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtSeason = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.RushYdstextBox = new System.Windows.Forms.TextBox();
-            this.SCKSAllowtextBox = new System.Windows.Forms.TextBox();
-            this.PassTDtextBox = new System.Windows.Forms.TextBox();
-            this.TOtextBox = new System.Windows.Forms.TextBox();
-            this.RZ4DtextBox = new System.Windows.Forms.TextBox();
-            this.RZ3DtextBox = new System.Windows.Forms.TextBox();
-            this.RZTD2textBox = new System.Windows.Forms.TextBox();
-            this.RZTD1textBox = new System.Windows.Forms.TextBox();
-            this.RZTDtextBox = new System.Windows.Forms.TextBox();
-            this.RZAtttextBox = new System.Windows.Forms.TextBox();
-            this.TDtextBox = new System.Windows.Forms.TextBox();
-            this.RushTDtextBox = new System.Windows.Forms.TextBox();
-            this.RushAtttextBox = new System.Windows.Forms.TextBox();
-            this.PassComptextBox = new System.Windows.Forms.TextBox();
-            this.PassAtttextBox = new System.Windows.Forms.TextBox();
-            this.PassYdstextBox = new System.Windows.Forms.TextBox();
-            this.InttextBox = new System.Windows.Forms.TextBox();
-            this.YdstextBox = new System.Windows.Forms.TextBox();
-            this.PlaystextBox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.FPTStextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.PointstextBox = new System.Windows.Forms.TextBox();
-            this.lblPoints = new System.Windows.Forms.Label();
-            this.Nametextbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.IdLabel = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            updateButton = new Button();
+            groupBox1 = new GroupBox();
+            txtSeason = new TextBox();
+            label22 = new Label();
+            RushYdstextBox = new TextBox();
+            SCKSAllowtextBox = new TextBox();
+            PassTDtextBox = new TextBox();
+            TOtextBox = new TextBox();
+            RZ4DtextBox = new TextBox();
+            RZ3DtextBox = new TextBox();
+            RZTD2textBox = new TextBox();
+            RZTD1textBox = new TextBox();
+            RZTDtextBox = new TextBox();
+            RZAtttextBox = new TextBox();
+            TDtextBox = new TextBox();
+            RushTDtextBox = new TextBox();
+            RushAtttextBox = new TextBox();
+            PassComptextBox = new TextBox();
+            PassAtttextBox = new TextBox();
+            PassYdstextBox = new TextBox();
+            InttextBox = new TextBox();
+            YdstextBox = new TextBox();
+            PlaystextBox = new TextBox();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label2 = new Label();
+            FPTStextBox = new TextBox();
+            label3 = new Label();
+            PointstextBox = new TextBox();
+            lblPoints = new Label();
+            Nametextbox = new TextBox();
+            label1 = new Label();
+            IdLabel = new Label();
+            btnClose = new Button();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(41, 720);
-            this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(92, 51);
-            this.updateButton.TabIndex = 3;
-            this.updateButton.Text = "Update";
-            this.updateButton.UseVisualStyleBackColor = true;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            updateButton.Location = new Point(47, 960);
+            updateButton.Margin = new Padding(3, 4, 3, 4);
+            updateButton.Name = "updateButton";
+            updateButton.Size = new Size(105, 68);
+            updateButton.TabIndex = 3;
+            updateButton.Text = "Update";
+            updateButton.UseVisualStyleBackColor = true;
+            updateButton.Click += updateButton_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtSeason);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.RushYdstextBox);
-            this.groupBox1.Controls.Add(this.SCKSAllowtextBox);
-            this.groupBox1.Controls.Add(this.PassTDtextBox);
-            this.groupBox1.Controls.Add(this.TOtextBox);
-            this.groupBox1.Controls.Add(this.RZ4DtextBox);
-            this.groupBox1.Controls.Add(this.RZ3DtextBox);
-            this.groupBox1.Controls.Add(this.RZTD2textBox);
-            this.groupBox1.Controls.Add(this.RZTD1textBox);
-            this.groupBox1.Controls.Add(this.RZTDtextBox);
-            this.groupBox1.Controls.Add(this.RZAtttextBox);
-            this.groupBox1.Controls.Add(this.TDtextBox);
-            this.groupBox1.Controls.Add(this.RushTDtextBox);
-            this.groupBox1.Controls.Add(this.RushAtttextBox);
-            this.groupBox1.Controls.Add(this.PassComptextBox);
-            this.groupBox1.Controls.Add(this.PassAtttextBox);
-            this.groupBox1.Controls.Add(this.PassYdstextBox);
-            this.groupBox1.Controls.Add(this.InttextBox);
-            this.groupBox1.Controls.Add(this.YdstextBox);
-            this.groupBox1.Controls.Add(this.PlaystextBox);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.FPTStextBox);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.PointstextBox);
-            this.groupBox1.Controls.Add(this.lblPoints);
-            this.groupBox1.Controls.Add(this.Nametextbox);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(18, 29);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(478, 665);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Update";
+            groupBox1.Controls.Add(txtSeason);
+            groupBox1.Controls.Add(label22);
+            groupBox1.Controls.Add(RushYdstextBox);
+            groupBox1.Controls.Add(SCKSAllowtextBox);
+            groupBox1.Controls.Add(PassTDtextBox);
+            groupBox1.Controls.Add(TOtextBox);
+            groupBox1.Controls.Add(RZ4DtextBox);
+            groupBox1.Controls.Add(RZ3DtextBox);
+            groupBox1.Controls.Add(RZTD2textBox);
+            groupBox1.Controls.Add(RZTD1textBox);
+            groupBox1.Controls.Add(RZTDtextBox);
+            groupBox1.Controls.Add(RZAtttextBox);
+            groupBox1.Controls.Add(TDtextBox);
+            groupBox1.Controls.Add(RushTDtextBox);
+            groupBox1.Controls.Add(RushAtttextBox);
+            groupBox1.Controls.Add(PassComptextBox);
+            groupBox1.Controls.Add(PassAtttextBox);
+            groupBox1.Controls.Add(PassYdstextBox);
+            groupBox1.Controls.Add(InttextBox);
+            groupBox1.Controls.Add(YdstextBox);
+            groupBox1.Controls.Add(PlaystextBox);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(label14);
+            groupBox1.Controls.Add(label15);
+            groupBox1.Controls.Add(label16);
+            groupBox1.Controls.Add(label17);
+            groupBox1.Controls.Add(label18);
+            groupBox1.Controls.Add(label19);
+            groupBox1.Controls.Add(label20);
+            groupBox1.Controls.Add(label21);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(FPTStextBox);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(PointstextBox);
+            groupBox1.Controls.Add(lblPoints);
+            groupBox1.Controls.Add(Nametextbox);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(21, 39);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(546, 887);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Update";
             // 
             // txtSeason
             // 
-            this.txtSeason.Location = new System.Drawing.Point(115, 85);
-            this.txtSeason.Name = "txtSeason";
-            this.txtSeason.Size = new System.Drawing.Size(100, 23);
-            this.txtSeason.TabIndex = 45;
+            txtSeason.Location = new Point(131, 113);
+            txtSeason.Margin = new Padding(3, 4, 3, 4);
+            txtSeason.Name = "txtSeason";
+            txtSeason.Size = new Size(114, 27);
+            txtSeason.TabIndex = 45;
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(36, 85);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 15);
-            this.label22.TabIndex = 44;
-            this.label22.Text = "Season";
+            label22.AutoSize = true;
+            label22.Location = new Point(41, 113);
+            label22.Name = "label22";
+            label22.Size = new Size(56, 20);
+            label22.TabIndex = 44;
+            label22.Text = "Season";
             // 
             // RushYdstextBox
             // 
-            this.RushYdstextBox.Location = new System.Drawing.Point(112, 604);
-            this.RushYdstextBox.Name = "RushYdstextBox";
-            this.RushYdstextBox.Size = new System.Drawing.Size(100, 23);
-            this.RushYdstextBox.TabIndex = 43;
+            RushYdstextBox.Location = new Point(128, 805);
+            RushYdstextBox.Margin = new Padding(3, 4, 3, 4);
+            RushYdstextBox.Name = "RushYdstextBox";
+            RushYdstextBox.Size = new Size(114, 27);
+            RushYdstextBox.TabIndex = 43;
             // 
             // SCKSAllowtextBox
             // 
-            this.SCKSAllowtextBox.Location = new System.Drawing.Point(336, 604);
-            this.SCKSAllowtextBox.Name = "SCKSAllowtextBox";
-            this.SCKSAllowtextBox.Size = new System.Drawing.Size(100, 23);
-            this.SCKSAllowtextBox.TabIndex = 42;
+            SCKSAllowtextBox.Location = new Point(384, 805);
+            SCKSAllowtextBox.Margin = new Padding(3, 4, 3, 4);
+            SCKSAllowtextBox.Name = "SCKSAllowtextBox";
+            SCKSAllowtextBox.Size = new Size(114, 27);
+            SCKSAllowtextBox.TabIndex = 42;
             // 
             // PassTDtextBox
             // 
-            this.PassTDtextBox.Location = new System.Drawing.Point(112, 552);
-            this.PassTDtextBox.Name = "PassTDtextBox";
-            this.PassTDtextBox.Size = new System.Drawing.Size(100, 23);
-            this.PassTDtextBox.TabIndex = 41;
+            PassTDtextBox.Location = new Point(128, 736);
+            PassTDtextBox.Margin = new Padding(3, 4, 3, 4);
+            PassTDtextBox.Name = "PassTDtextBox";
+            PassTDtextBox.Size = new Size(114, 27);
+            PassTDtextBox.TabIndex = 41;
             // 
             // TOtextBox
             // 
-            this.TOtextBox.Location = new System.Drawing.Point(336, 552);
-            this.TOtextBox.Name = "TOtextBox";
-            this.TOtextBox.Size = new System.Drawing.Size(100, 23);
-            this.TOtextBox.TabIndex = 40;
+            TOtextBox.Location = new Point(384, 736);
+            TOtextBox.Margin = new Padding(3, 4, 3, 4);
+            TOtextBox.Name = "TOtextBox";
+            TOtextBox.Size = new Size(114, 27);
+            TOtextBox.TabIndex = 40;
             // 
             // RZ4DtextBox
             // 
-            this.RZ4DtextBox.Location = new System.Drawing.Point(336, 500);
-            this.RZ4DtextBox.Name = "RZ4DtextBox";
-            this.RZ4DtextBox.Size = new System.Drawing.Size(100, 23);
-            this.RZ4DtextBox.TabIndex = 39;
+            RZ4DtextBox.Location = new Point(384, 667);
+            RZ4DtextBox.Margin = new Padding(3, 4, 3, 4);
+            RZ4DtextBox.Name = "RZ4DtextBox";
+            RZ4DtextBox.Size = new Size(114, 27);
+            RZ4DtextBox.TabIndex = 39;
             // 
             // RZ3DtextBox
             // 
-            this.RZ3DtextBox.Location = new System.Drawing.Point(336, 448);
-            this.RZ3DtextBox.Name = "RZ3DtextBox";
-            this.RZ3DtextBox.Size = new System.Drawing.Size(100, 23);
-            this.RZ3DtextBox.TabIndex = 38;
+            RZ3DtextBox.Location = new Point(384, 597);
+            RZ3DtextBox.Margin = new Padding(3, 4, 3, 4);
+            RZ3DtextBox.Name = "RZ3DtextBox";
+            RZ3DtextBox.Size = new Size(114, 27);
+            RZ3DtextBox.TabIndex = 38;
             // 
             // RZTD2textBox
             // 
-            this.RZTD2textBox.Location = new System.Drawing.Point(336, 396);
-            this.RZTD2textBox.Name = "RZTD2textBox";
-            this.RZTD2textBox.Size = new System.Drawing.Size(100, 23);
-            this.RZTD2textBox.TabIndex = 37;
+            RZTD2textBox.Location = new Point(384, 528);
+            RZTD2textBox.Margin = new Padding(3, 4, 3, 4);
+            RZTD2textBox.Name = "RZTD2textBox";
+            RZTD2textBox.Size = new Size(114, 27);
+            RZTD2textBox.TabIndex = 37;
             // 
             // RZTD1textBox
             // 
-            this.RZTD1textBox.Location = new System.Drawing.Point(336, 344);
-            this.RZTD1textBox.Name = "RZTD1textBox";
-            this.RZTD1textBox.Size = new System.Drawing.Size(100, 23);
-            this.RZTD1textBox.TabIndex = 36;
+            RZTD1textBox.Location = new Point(384, 459);
+            RZTD1textBox.Margin = new Padding(3, 4, 3, 4);
+            RZTD1textBox.Name = "RZTD1textBox";
+            RZTD1textBox.Size = new Size(114, 27);
+            RZTD1textBox.TabIndex = 36;
             // 
             // RZTDtextBox
             // 
-            this.RZTDtextBox.Location = new System.Drawing.Point(336, 292);
-            this.RZTDtextBox.Name = "RZTDtextBox";
-            this.RZTDtextBox.Size = new System.Drawing.Size(100, 23);
-            this.RZTDtextBox.TabIndex = 35;
+            RZTDtextBox.Location = new Point(384, 389);
+            RZTDtextBox.Margin = new Padding(3, 4, 3, 4);
+            RZTDtextBox.Name = "RZTDtextBox";
+            RZTDtextBox.Size = new Size(114, 27);
+            RZTDtextBox.TabIndex = 35;
             // 
             // RZAtttextBox
             // 
-            this.RZAtttextBox.Location = new System.Drawing.Point(336, 240);
-            this.RZAtttextBox.Name = "RZAtttextBox";
-            this.RZAtttextBox.Size = new System.Drawing.Size(100, 23);
-            this.RZAtttextBox.TabIndex = 34;
+            RZAtttextBox.Location = new Point(384, 320);
+            RZAtttextBox.Margin = new Padding(3, 4, 3, 4);
+            RZAtttextBox.Name = "RZAtttextBox";
+            RZAtttextBox.Size = new Size(114, 27);
+            RZAtttextBox.TabIndex = 34;
             // 
             // TDtextBox
             // 
-            this.TDtextBox.Location = new System.Drawing.Point(336, 188);
-            this.TDtextBox.Name = "TDtextBox";
-            this.TDtextBox.Size = new System.Drawing.Size(100, 23);
-            this.TDtextBox.TabIndex = 33;
+            TDtextBox.Location = new Point(384, 251);
+            TDtextBox.Margin = new Padding(3, 4, 3, 4);
+            TDtextBox.Name = "TDtextBox";
+            TDtextBox.Size = new Size(114, 27);
+            TDtextBox.TabIndex = 33;
             // 
             // RushTDtextBox
             // 
-            this.RushTDtextBox.Location = new System.Drawing.Point(336, 136);
-            this.RushTDtextBox.Name = "RushTDtextBox";
-            this.RushTDtextBox.Size = new System.Drawing.Size(100, 23);
-            this.RushTDtextBox.TabIndex = 32;
+            RushTDtextBox.Location = new Point(384, 181);
+            RushTDtextBox.Margin = new Padding(3, 4, 3, 4);
+            RushTDtextBox.Name = "RushTDtextBox";
+            RushTDtextBox.Size = new Size(114, 27);
+            RushTDtextBox.TabIndex = 32;
             // 
             // RushAtttextBox
             // 
-            this.RushAtttextBox.Location = new System.Drawing.Point(336, 84);
-            this.RushAtttextBox.Name = "RushAtttextBox";
-            this.RushAtttextBox.Size = new System.Drawing.Size(100, 23);
-            this.RushAtttextBox.TabIndex = 31;
+            RushAtttextBox.Location = new Point(384, 112);
+            RushAtttextBox.Margin = new Padding(3, 4, 3, 4);
+            RushAtttextBox.Name = "RushAtttextBox";
+            RushAtttextBox.Size = new Size(114, 27);
+            RushAtttextBox.TabIndex = 31;
             // 
             // PassComptextBox
             // 
-            this.PassComptextBox.Location = new System.Drawing.Point(112, 500);
-            this.PassComptextBox.Name = "PassComptextBox";
-            this.PassComptextBox.Size = new System.Drawing.Size(100, 23);
-            this.PassComptextBox.TabIndex = 30;
+            PassComptextBox.Location = new Point(128, 667);
+            PassComptextBox.Margin = new Padding(3, 4, 3, 4);
+            PassComptextBox.Name = "PassComptextBox";
+            PassComptextBox.Size = new Size(114, 27);
+            PassComptextBox.TabIndex = 30;
             // 
             // PassAtttextBox
             // 
-            this.PassAtttextBox.Location = new System.Drawing.Point(112, 448);
-            this.PassAtttextBox.Name = "PassAtttextBox";
-            this.PassAtttextBox.Size = new System.Drawing.Size(100, 23);
-            this.PassAtttextBox.TabIndex = 29;
+            PassAtttextBox.Location = new Point(128, 597);
+            PassAtttextBox.Margin = new Padding(3, 4, 3, 4);
+            PassAtttextBox.Name = "PassAtttextBox";
+            PassAtttextBox.Size = new Size(114, 27);
+            PassAtttextBox.TabIndex = 29;
             // 
             // PassYdstextBox
             // 
-            this.PassYdstextBox.Location = new System.Drawing.Point(112, 396);
-            this.PassYdstextBox.Name = "PassYdstextBox";
-            this.PassYdstextBox.Size = new System.Drawing.Size(100, 23);
-            this.PassYdstextBox.TabIndex = 28;
+            PassYdstextBox.Location = new Point(128, 528);
+            PassYdstextBox.Margin = new Padding(3, 4, 3, 4);
+            PassYdstextBox.Name = "PassYdstextBox";
+            PassYdstextBox.Size = new Size(114, 27);
+            PassYdstextBox.TabIndex = 28;
             // 
             // InttextBox
             // 
-            this.InttextBox.Location = new System.Drawing.Point(112, 344);
-            this.InttextBox.Name = "InttextBox";
-            this.InttextBox.Size = new System.Drawing.Size(100, 23);
-            this.InttextBox.TabIndex = 27;
+            InttextBox.Location = new Point(128, 459);
+            InttextBox.Margin = new Padding(3, 4, 3, 4);
+            InttextBox.Name = "InttextBox";
+            InttextBox.Size = new Size(114, 27);
+            InttextBox.TabIndex = 27;
             // 
             // YdstextBox
             // 
-            this.YdstextBox.Location = new System.Drawing.Point(112, 292);
-            this.YdstextBox.Name = "YdstextBox";
-            this.YdstextBox.Size = new System.Drawing.Size(100, 23);
-            this.YdstextBox.TabIndex = 26;
+            YdstextBox.Location = new Point(128, 389);
+            YdstextBox.Margin = new Padding(3, 4, 3, 4);
+            YdstextBox.Name = "YdstextBox";
+            YdstextBox.Size = new Size(114, 27);
+            YdstextBox.TabIndex = 26;
             // 
             // PlaystextBox
             // 
-            this.PlaystextBox.Location = new System.Drawing.Point(112, 240);
-            this.PlaystextBox.Name = "PlaystextBox";
-            this.PlaystextBox.Size = new System.Drawing.Size(100, 23);
-            this.PlaystextBox.TabIndex = 25;
+            PlaystextBox.Location = new Point(128, 320);
+            PlaystextBox.Margin = new Padding(3, 4, 3, 4);
+            PlaystextBox.Name = "PlaystextBox";
+            PlaystextBox.Size = new Size(114, 27);
+            PlaystextBox.TabIndex = 25;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(257, 614);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 15);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Sacks Allow";
+            label11.AutoSize = true;
+            label11.Location = new Point(294, 819);
+            label11.Name = "label11";
+            label11.Size = new Size(87, 20);
+            label11.TabIndex = 24;
+            label11.Text = "Sacks Allow";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(257, 561);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(21, 15);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "TO";
+            label12.AutoSize = true;
+            label12.Location = new Point(294, 748);
+            label12.Name = "label12";
+            label12.Size = new Size(27, 20);
+            label12.TabIndex = 23;
+            label12.Text = "TO";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(257, 508);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 15);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "RZ 4D";
+            label13.AutoSize = true;
+            label13.Location = new Point(294, 677);
+            label13.Name = "label13";
+            label13.Size = new Size(50, 20);
+            label13.TabIndex = 22;
+            label13.Text = "RZ 4D";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(257, 455);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 15);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "RZ 3D";
+            label14.AutoSize = true;
+            label14.Location = new Point(294, 607);
+            label14.Name = "label14";
+            label14.Size = new Size(50, 20);
+            label14.TabIndex = 21;
+            label14.Text = "RZ 3D";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(257, 402);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(44, 15);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "RZ TD2";
+            label15.AutoSize = true;
+            label15.Location = new Point(294, 536);
+            label15.Name = "label15";
+            label15.Size = new Size(58, 20);
+            label15.TabIndex = 20;
+            label15.Text = "RZ TD2";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(257, 349);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 15);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "RZ TD1";
+            label16.AutoSize = true;
+            label16.Location = new Point(294, 465);
+            label16.Name = "label16";
+            label16.Size = new Size(58, 20);
+            label16.TabIndex = 19;
+            label16.Text = "RZ TD1";
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(257, 296);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(38, 15);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "RZ TD";
+            label17.AutoSize = true;
+            label17.Location = new Point(294, 395);
+            label17.Name = "label17";
+            label17.Size = new Size(50, 20);
+            label17.TabIndex = 18;
+            label17.Text = "RZ TD";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(257, 243);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(40, 15);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "RZ Att";
+            label18.AutoSize = true;
+            label18.Location = new Point(294, 324);
+            label18.Name = "label18";
+            label18.Size = new Size(51, 20);
+            label18.TabIndex = 17;
+            label18.Text = "RZ Att";
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(257, 190);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(21, 15);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "TD";
+            label19.AutoSize = true;
+            label19.Location = new Point(294, 253);
+            label19.Name = "label19";
+            label19.Size = new Size(28, 20);
+            label19.TabIndex = 16;
+            label19.Text = "TD";
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(257, 137);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(50, 15);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Rush TD";
+            label20.AutoSize = true;
+            label20.Location = new Point(294, 183);
+            label20.Name = "label20";
+            label20.Size = new Size(63, 20);
+            label20.TabIndex = 15;
+            label20.Text = "Rush TD";
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(257, 87);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(52, 15);
-            this.label21.TabIndex = 14;
-            this.label21.Text = "Rush Att";
+            label21.AutoSize = true;
+            label21.Location = new Point(294, 116);
+            label21.Name = "label21";
+            label21.Size = new Size(64, 20);
+            label21.TabIndex = 14;
+            label21.Text = "Rush Att";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 614);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 15);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Rush Yds";
+            label10.AutoSize = true;
+            label10.Location = new Point(41, 819);
+            label10.Name = "label10";
+            label10.Size = new Size(66, 20);
+            label10.TabIndex = 13;
+            label10.Text = "Rush Yds";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(36, 561);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 15);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Pass TD";
+            label9.AutoSize = true;
+            label9.Location = new Point(41, 748);
+            label9.Name = "label9";
+            label9.Size = new Size(59, 20);
+            label9.TabIndex = 12;
+            label9.Text = "Pass TD";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(36, 508);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 15);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Pass Comp";
+            label8.AutoSize = true;
+            label8.Location = new Point(41, 677);
+            label8.Name = "label8";
+            label8.Size = new Size(80, 20);
+            label8.TabIndex = 11;
+            label8.Text = "Pass Comp";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(36, 455);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 15);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Pass Att";
+            label7.AutoSize = true;
+            label7.Location = new Point(41, 607);
+            label7.Name = "label7";
+            label7.Size = new Size(60, 20);
+            label7.TabIndex = 10;
+            label7.Text = "Pass Att";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(36, 402);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Pass Yds";
+            label6.AutoSize = true;
+            label6.Location = new Point(41, 536);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 20);
+            label6.TabIndex = 9;
+            label6.Text = "Pass Yds";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 349);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Int";
+            label5.AutoSize = true;
+            label5.Location = new Point(41, 465);
+            label5.Name = "label5";
+            label5.Size = new Size(26, 20);
+            label5.TabIndex = 8;
+            label5.Text = "Int";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 296);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Yards";
+            label4.AutoSize = true;
+            label4.Location = new Point(41, 395);
+            label4.Name = "label4";
+            label4.Size = new Size(44, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Yards";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 243);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Plays";
+            label2.AutoSize = true;
+            label2.Location = new Point(41, 324);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Plays";
             // 
             // FPTStextBox
             // 
-            this.FPTStextBox.Location = new System.Drawing.Point(112, 188);
-            this.FPTStextBox.Name = "FPTStextBox";
-            this.FPTStextBox.Size = new System.Drawing.Size(100, 23);
-            this.FPTStextBox.TabIndex = 5;
+            FPTStextBox.Location = new Point(128, 251);
+            FPTStextBox.Margin = new Padding(3, 4, 3, 4);
+            FPTStextBox.Name = "FPTStextBox";
+            FPTStextBox.Size = new Size(114, 27);
+            FPTStextBox.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 190);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "FPTS";
+            label3.AutoSize = true;
+            label3.Location = new Point(41, 253);
+            label3.Name = "label3";
+            label3.Size = new Size(40, 20);
+            label3.TabIndex = 4;
+            label3.Text = "FPTS";
             // 
             // PointstextBox
             // 
-            this.PointstextBox.Location = new System.Drawing.Point(112, 136);
-            this.PointstextBox.Name = "PointstextBox";
-            this.PointstextBox.Size = new System.Drawing.Size(100, 23);
-            this.PointstextBox.TabIndex = 3;
+            PointstextBox.Location = new Point(128, 181);
+            PointstextBox.Margin = new Padding(3, 4, 3, 4);
+            PointstextBox.Name = "PointstextBox";
+            PointstextBox.Size = new Size(114, 27);
+            PointstextBox.TabIndex = 3;
             // 
             // lblPoints
             // 
-            this.lblPoints.AutoSize = true;
-            this.lblPoints.Location = new System.Drawing.Point(36, 137);
-            this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(40, 15);
-            this.lblPoints.TabIndex = 2;
-            this.lblPoints.Text = "Points";
+            lblPoints.AutoSize = true;
+            lblPoints.Location = new Point(41, 183);
+            lblPoints.Name = "lblPoints";
+            lblPoints.Size = new Size(48, 20);
+            lblPoints.TabIndex = 2;
+            lblPoints.Text = "Points";
             // 
             // Nametextbox
             // 
-            this.Nametextbox.Location = new System.Drawing.Point(178, 31);
-            this.Nametextbox.Name = "Nametextbox";
-            this.Nametextbox.Size = new System.Drawing.Size(139, 23);
-            this.Nametextbox.TabIndex = 1;
+            Nametextbox.Location = new Point(203, 41);
+            Nametextbox.Margin = new Padding(3, 4, 3, 4);
+            Nametextbox.Name = "Nametextbox";
+            Nametextbox.Size = new Size(158, 27);
+            Nametextbox.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Team";
+            label1.AutoSize = true;
+            label1.Location = new Point(134, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(45, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Team";
             // 
             // IdLabel
             // 
-            this.IdLabel.AutoSize = true;
-            this.IdLabel.Location = new System.Drawing.Point(522, 28);
-            this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(0, 15);
-            this.IdLabel.TabIndex = 4;
-            this.IdLabel.Visible = false;
+            IdLabel.AutoSize = true;
+            IdLabel.Location = new Point(597, 37);
+            IdLabel.Name = "IdLabel";
+            IdLabel.Size = new Size(0, 20);
+            IdLabel.TabIndex = 4;
+            IdLabel.Visible = false;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(387, 720);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(88, 51);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            btnClose.Location = new Point(442, 960);
+            btnClose.Margin = new Padding(3, 4, 3, 4);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(101, 68);
+            btnClose.TabIndex = 5;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // frmTeamDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 817);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.IdLabel);
-            this.Controls.Add(this.updateButton);
-            this.Controls.Add(this.groupBox1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmTeamDetail";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Team Detail";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(590, 1055);
+            Controls.Add(groupBox1);
+            Controls.Add(btnClose);
+            Controls.Add(IdLabel);
+            Controls.Add(updateButton);
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "frmTeamDetail";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Team Detail";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

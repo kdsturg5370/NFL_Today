@@ -89,6 +89,7 @@ namespace NFL_Today
             RZ4DtextBox.Clear();
             TOtextBox.Clear();
             SCKSAllowtextBox.Clear();
+            txtNameQuery.Clear();
 
 
             TeamDataGridView.ClearSelection();
@@ -232,13 +233,13 @@ namespace NFL_Today
                     bool isDelete = _teamManager.Delete(id);
                     if (isDelete)
                     {
-                        MessageBox.Show("Team has been removed.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Selected entry has been removed.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         TeamDataGridView.Rows.Remove(dr);
                         Reset();
                     }
                     else
                     {
-                        MessageBox.Show("Team removal failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Selected entry removal failed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -288,7 +289,7 @@ namespace NFL_Today
                 SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                 conn.Open();
 
-                string query = "Select * From Teams";
+                string query = "Select id,name,season,pts,fpts,plays,yds,int,pass_yds,pass_att,pass_comp,pass_td,rush_yds,rush_att,rush_td,td,rz_att,rz_td,rz_td1,rz_2d,rz_3d,rz_4d,[TO],scks_allow From Teams";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
 
                 DataTable dt = new DataTable();
@@ -609,12 +610,14 @@ namespace NFL_Today
                         SQLiteConnection conn = new SQLiteConnection(@"Data Source = C:\Users\kdstu\source\repos\NFL_Today\DB\NFLDB.db");
                         conn.Open();
 
-                        SQLiteCommand sqlCommand = new SQLiteCommand("INSERT INTO 'Query_Archive'(Query_Text)Values(@QText)", conn);
+                        SQLiteCommand sqlCommand = new SQLiteCommand("INSERT INTO 'Query_Archive'(Query_Text,Query_Name)Values(@QText,@QName)", conn);
                         sqlCommand.Parameters.AddWithValue("@QText", txtRankNumber.Text);
-                    
+                      
+                        sqlCommand.Parameters.AddWithValue("@QName", txtNameQuery.Text);
+
 
                         sqlCommand.ExecuteNonQuery();
-                        ClearForm();
+                        //ClearForm();
                         txtRankNumber.Focus();
                         conn.Close();
 

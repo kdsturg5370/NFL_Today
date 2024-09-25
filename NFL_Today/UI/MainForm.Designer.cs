@@ -114,6 +114,8 @@
             lblTotal = new Label();
             label24 = new Label();
             groupBox3 = new GroupBox();
+            txtNameQuery = new TextBox();
+            lblNameQuery = new Label();
             btnSaveQuery = new Button();
             label45 = new Label();
             btnInstruction = new Button();
@@ -219,7 +221,7 @@
             TeamDataGridView.RowHeadersWidth = 102;
             TeamDataGridView.RowTemplate.Height = 25;
             TeamDataGridView.RowTemplate.Resizable = DataGridViewTriState.True;
-            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             TeamDataGridView.Size = new Size(781, 163);
             TeamDataGridView.TabIndex = 3;
             TeamDataGridView.RowHeaderMouseDoubleClick += TeamDataGridView_RowHeaderMouseDoubleClick;
@@ -710,7 +712,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { teamRosterToolStripMenuItem, teamStatsStandingsToolStripMenuItem, offenseStatsToolStripMenuItem, defenseStatsToolStripMenuItem, dLListToolStripMenuItem, snapCountsToolStripMenuItem, bettingOddsToolStripMenuItem, fantasyStatsToolStripMenuItem, targetsToolStripMenuItem, depthChartsToolStripMenuItem, analyticsToolStripMenuItem, updateAllStatsToolStripMenuItem, glossaryToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1357, 24);
+            menuStrip1.Size = new Size(1584, 24);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -894,6 +896,8 @@
             // groupBox3
             // 
             groupBox3.BackColor = Color.LightGray;
+            groupBox3.Controls.Add(txtNameQuery);
+            groupBox3.Controls.Add(lblNameQuery);
             groupBox3.Controls.Add(btnSaveQuery);
             groupBox3.Controls.Add(label45);
             groupBox3.Controls.Add(btnInstruction);
@@ -922,6 +926,22 @@
             groupBox3.TabIndex = 12;
             groupBox3.TabStop = false;
             groupBox3.Text = "Team/Rank/Player Lookup";
+            // 
+            // txtNameQuery
+            // 
+            txtNameQuery.Location = new Point(120, 318);
+            txtNameQuery.Name = "txtNameQuery";
+            txtNameQuery.Size = new Size(161, 23);
+            txtNameQuery.TabIndex = 33;
+            // 
+            // lblNameQuery
+            // 
+            lblNameQuery.AutoSize = true;
+            lblNameQuery.Location = new Point(6, 319);
+            lblNameQuery.Name = "lblNameQuery";
+            lblNameQuery.Size = new Size(101, 15);
+            lblNameQuery.TabIndex = 32;
+            lblNameQuery.Text = "Name Your Query";
             // 
             // btnSaveQuery
             // 
@@ -1074,7 +1094,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(6, 289);
+            label27.Location = new Point(6, 270);
             label27.Name = "label27";
             label27.Size = new Size(69, 15);
             label27.TabIndex = 15;
@@ -1085,8 +1105,9 @@
             txtRankNumber.Location = new Point(86, 263);
             txtRankNumber.Multiline = true;
             txtRankNumber.Name = "txtRankNumber";
-            txtRankNumber.Size = new Size(291, 73);
+            txtRankNumber.Size = new Size(291, 40);
             txtRankNumber.TabIndex = 14;
+            txtRankNumber.Text = "SELECT ID, Query_Text, Query_Name  FROM Query_Archive";
             // 
             // cbTeam
             // 
@@ -1309,7 +1330,7 @@
             label43.Location = new Point(6, 23);
             label43.Name = "label43";
             label43.Size = new Size(63, 30);
-            label43.TabIndex = 3;
+            label43.TabIndex = 0;
             label43.Text = "Team\r\nCategories";
             // 
             // comboBox15
@@ -1353,8 +1374,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.LightGray;
-            ClientSize = new Size(1357, 749);
+            ClientSize = new Size(1584, 911);
             ContextMenuStrip = contextMenuStrip1;
             Controls.Add(btnClear);
             Controls.Add(label41);
@@ -1377,7 +1400,6 @@
             Controls.Add(menuStrip1);
             Controls.Add(btnShowTeams);
             Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
             Controls.Add(TeamDataGridView);
             Controls.Add(btnClose);
             Controls.Add(Savebutton);
@@ -1385,8 +1407,11 @@
             Controls.Add(cbSeason);
             Controls.Add(label23);
             Controls.Add(groupBox4);
+            Controls.Add(groupBox1);
             MainMenuStrip = menuStrip1;
             Name = "MainForm";
+            RightToLeft = RightToLeft.No;
+            RightToLeftLayout = true;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NFL Team Statistics";
             contextMenuStrip1.ResumeLayout(false);
@@ -1540,5 +1565,7 @@
         private Button btnClear;
         private Label label45;
         private Button btnSaveQuery;
+        private TextBox txtNameQuery;
+        private Label lblNameQuery;
     }
 }
