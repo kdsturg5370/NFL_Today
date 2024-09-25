@@ -172,7 +172,7 @@
             // 
             // Savebutton
             // 
-            Savebutton.Location = new Point(38, 687);
+            Savebutton.Location = new Point(125, 687);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(87, 47);
             Savebutton.TabIndex = 1;
@@ -209,17 +209,16 @@
             TeamDataGridView.AllowUserToAddRows = false;
             TeamDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             TeamDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            TeamDataGridView.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            TeamDataGridView.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             TeamDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TeamDataGridView.ContextMenuStrip = contextMenuStrip1;
             TeamDataGridView.Location = new Point(545, 491);
             TeamDataGridView.Margin = new Padding(1);
             TeamDataGridView.Name = "TeamDataGridView";
-            TeamDataGridView.ReadOnly = true;
             TeamDataGridView.RowHeadersWidth = 102;
             TeamDataGridView.RowTemplate.Height = 25;
             TeamDataGridView.RowTemplate.Resizable = DataGridViewTriState.True;
-            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            TeamDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             TeamDataGridView.Size = new Size(781, 163);
             TeamDataGridView.TabIndex = 3;
             TeamDataGridView.RowHeaderMouseDoubleClick += TeamDataGridView_RowHeaderMouseDoubleClick;
@@ -1087,6 +1086,7 @@
             txtRankNumber.Name = "txtRankNumber";
             txtRankNumber.Size = new Size(291, 73);
             txtRankNumber.TabIndex = 14;
+            txtRankNumber.Text = "SELECT * FROM Query_Archive";
             // 
             // cbTeam
             // 
@@ -1341,7 +1341,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(363, 687);
+            btnClear.Location = new Point(348, 687);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(93, 47);
             btnClear.TabIndex = 29;
